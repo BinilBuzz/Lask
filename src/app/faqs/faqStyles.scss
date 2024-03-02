@@ -1,0 +1,60 @@
+@import "../custom.scss";
+.faq-section {
+  h2 {
+    margin-bottom: 1.875rem;
+  }
+  .accordion {
+    .accordion-item {
+      padding: 2.25rem 2.25rem;
+      margin-bottom: 0.625rem;
+      border: 2px solid #ececec;
+      border-radius: 5px;
+    }
+    .accordion-item button {
+      padding: 0px;
+      color: $blue;
+      font-weight: 500;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .accordion-item .accordion-body {
+      padding: 0rem;
+      margin-top: 1rem;
+      color: #434343;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  .questions {
+    margin-top: 3.75rem;
+    @media (max-width: 991.98px) {
+      margin-top: 1.75rem;
+    }
+    a {
+      color: $blue;
+      font-weight: 500;
+      text-decoration: none;
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+    }
+    &__title {
+      font-size: 1.5rem;
+      color: $secondary;
+      font-size: 600;
+      padding-bottom: 1.5625rem;
+      @media (max-width: 991.98px) {
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+      }
+    }
+    &__text {
+    }
+  }
+}
